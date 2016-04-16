@@ -90,21 +90,21 @@ After running the command above, you may be wondering how I knew that *'my name'
 
 The best way to inspect a page for attributes such as ids is to go to the **Elements** tab of the Developer Tools. Depending what browser you are using and how you accessed the Developer Tools, your page might not look like mine but you should see something like:
 
-`<!DOCTYPE html>
-<html>
-  <head>...</head>
-  <body>...</body>
-</html>`
+    <!DOCTYPE html>
+      <html>
+      <head>...</head>
+      <body>...</body>
+    </html>`
 
-Click the triangle next to <body>...</body>. This should open up an indented outline of all the **HTML** elements on the page. For example, directly underneath <body> you will see:
+Click the triangle next to `<body>...</body>`. This should open up an indented outline of all the **HTML** elements on the page. For example, directly underneath <body> you will see:
 
-`<div class="container">
-  <h4>...</h4>
-  <div class="challenges">...</div>
-  ...
-</div>`
+    <div class="container">
+      <h4>...</h4>
+      <div class="challenges">...</div>
+      ...
+    </div>
 
-If you click the triangle next to <div class="challenges">...</div> to view the elements inside, you should see a *h4* (= heading, type 4) element with an *id* of *'my name'* that looks like this:
+If you click the triangle next to `<div class="challenges">...</div>` to view the elements inside, you should see a *h4* (= heading, type 4) element with an *id* of *'my name'* that looks like this:
 
 `<h4 id="my-name">WRITE YOUR NAME HERE</h4>`
 
