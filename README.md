@@ -74,7 +74,7 @@ Now, let's break down the command you typed:
 - *$* is the universal symbol for jQuery. What *$()* does is tell your browser, "get me the page and prepare to look for whatever I type inside *()*"
 - Inside the *()* you wrote *'#my-name'*. *#* is the abbreviation for an element's *id*. So *'$('#my-name')'* means, "get me whatever element on the page has the *id* of 'my-name'"
 - *.text()* retrieves whatever text is inside an **HTML** element. Calling *.text('YOUR NAME')* sets the text of an element to whatever is inside the *()*.
-- The semicolon (*;*) is used to separate statements in JavaScript. It is not required for your code to work, but writing semicolons at the end of certain lines is a standard convention in JavaScript (semicolon enthusiasts: read more [here](https://www.codecademy.com/blog/78))
+- The semicolon *;* is used to separate statements in JavaScript. It is not required for your code to work, but writing semicolons at the end of certain lines is a standard convention in JavaScript (semicolon enthusiasts: read more [here](https://www.codecademy.com/blog/78))
 
 As a last step, try entering the following into the console:
 
