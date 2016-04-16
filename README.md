@@ -2,15 +2,17 @@
 
 ## How to Use this workshop
 
-1. Git clone this repo: ''
-2. Open 'workspace.html' in a web browser.
-3. Open the Developer Tools and enter jQuery commands in the **Console** to complete the list of tasks.
-4. Mark each task 'Complete when you are finished'.
-5. Be Careful! Refreshing the page will erase all of your completed work and force you to restart.
+1. Git clone this repo: 'https://github.com/mrjaimisra/jquery-workshop.git'
+2. Run 'rail s' from the terminal to start the server.
+3. Navigate to 'http://localhost:3000'
+4. Click the links underneath 'List of jQuery Challenges' to visit the specific page for each challenge.
+5. Open the Developer Tools and enter jQuery commands in the **Console** to complete the list of tasks on each page.
 
 ## Instructions
 
-For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section titled **Workshop** for a link to the [List of jQuery Challenges](/index/).
+For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section below titled **Workshop** for a link to the [List of jQuery Challenges](/index/).
+
+Be Careful! Refreshing the page will erase all of your completed work and force you to restart.
 
 ### What is jQuery
 
@@ -110,21 +112,19 @@ If you click the triangle next to `<div class="challenges">...</div>` to view th
 
 This is the element that you targeted with your first jQuery command. By using the *id 'my-name'*, you were able to find it on the page with jQuery, return the text inside the *h4* element, and change the text to your name.
 
->Note: This is the part that might get complicated if you are not familiar with HTML. Remember, the **HTML** is *what is on the page*. The Developer Tools' **Elements** tab shows you an outline of all the content on the page, represented in a tree structure of nested elements.
+>Note: This is the part that might get complicated if you are not familiar with HTML. Remember, the **HTML** is *what is on the page*. The Developer Tools' **Elements** tab shows you an outline of all the content on the page, represented in a tree structure of nested elements. Elements are containers for content on the page.
 
->Elements are denoted by **HTML** tags, the text in between '<>' and '</>', and most elements need an opening and a closing tag. '<>' is an opening tag and "</>" is a closing tag.
-
->Each element on a page is like a small box that holds a specific piece of content. Larger elements like headings (*<h1></h1>*), paragraphs (*<p></p>*), and divs (*<div></div>*) contain text and smaller elements like links (*<a></a>*), images (*<img></img>*), and spans (*<span></span>*).
+>Elements are denoted by **HTML** tags. Tags are the text in between '<>' and '</>'. Most elements need an opening and a closing tag. '<>' is an opening tag and "</>" is a closing tag.
 
 #### Round 2: Changing CSS attributes with jQuery
 
 Let's try another one.
 
 1. First navigate to the [Colors](/colors/) challenge. Inspect the page and open the **Elements** tab.
-2. In the **Elements** tab, click the triangle next to <body>...</body>.
-3. Then click the triangle next to: <div class="container">...</div>
-4. Finally, click the triangle next to: <div class="challenges">...</div>
-5. Inside *<div class="challenges">...</div>* you should see a *h2* (= heading, type 2) element with an *id* of *'make-my-background-yellow'*. Great, so now we know what element to target with jQuery in the Developer Tools **Console**.
+2. In the **Elements** tab, click the triangle next to `<body\>...\</body\>`.
+3. Then click the triangle next to: `<div class="container">...</div>`
+4. Finally, click the triangle next to: `<div class="challenges"\>...\</div\>`
+5. Inside `<div class="challenges">...</div>` *you should see a *h2* (= heading, type 2) element with an *id* of *'make-my-background-yellow'*. Great, so now we know what element to target with jQuery in the Developer Tools **Console**.
 6. Switch to the **Console** tab.
 7. Let's try something similar to what we did with *.text()*, but this time we'll try *.backgroundColor()*, which seems to follow the same logical pattern.
 
