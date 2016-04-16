@@ -57,11 +57,11 @@ There are several tabs in the developer panel, but today we will only use three 
 4. In the terminal, you should see a '\>' and a blinking cursor.
 5. After the \>, type the **jQuery** command:
 
-$('#my-name').text('YOUR NAME');
+`$('#my-name').text('YOUR NAME');`
 
 6. The output that should be returned from that command is something like:
 
-[<div id="my-name">'YOUR NAME'</div>]
+`[<div id="my-name">'YOUR NAME'</div>]`
 
 7. You're done. You just wrote your first **HTML** page query with **jQuery**!
 
@@ -76,11 +76,11 @@ Now, let's break down the command you typed:
 
 As a last step, try entering the following into the console:
 
-$('#my-name').text();
+`$('#my-name').text();`
 
 You should see the output:
 
-"YOUR NAME"
+`"YOUR NAME"`
 
 You will notice that this time calling *.text()* returned the text that was inside the '#my-name' element. That is because jQuery knows to get you the element's text if you don't write anything inside the *()*, and set the element's text if you do write something. The ability to use the same method for different purposes--in this case as a *getter* and a *setter* of an element's text is a key feature of JavaScript.
 
@@ -90,23 +90,23 @@ After running the command above, you may be wondering how I knew that *'my name'
 
 The best way to inspect a page for attributes such as ids is to go to the **Elements** tab of the Developer Tools. Depending what browser you are using and how you accessed the Developer Tools, your page might not look like mine but you should see something like:
 
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html>
   <head>...</head>
   <body>...</body>
-</html>
+</html>`
 
 Click the triangle next to <body>...</body>. This should open up an indented outline of all the **HTML** elements on the page. For example, directly underneath <body> you will see:
 
-<div class="container">
+`<div class="container">
   <h4>...</h4>
   <div class="challenges">...</div>
   ...
-</div>
+</div>`
 
 If you click the triangle next to <div class="challenges">...</div> to view the elements inside, you should see a *h4* (= heading, type 4) element with an *id* of *'my name'* that looks like this:
 
-<h4 id="my-name">WRITE YOUR NAME HERE</h4>
+`<h4 id="my-name">WRITE YOUR NAME HERE</h4>`
 
 This is the element that you targeted with your first jQuery command. By using the *id 'my-name'*, you were able to find it on the page with jQuery, return the text inside the *h4* element, and change the text to your name.
 
@@ -130,11 +130,11 @@ Let's try another one.
 
 In the **Console** tab, next to the '\>', type the following into the terminal:
 
-$('#make-my-background-yellow').backgroundColor('yellow');
+`$('#make-my-background-yellow').backgroundColor('yellow');`
 
 8. After running the command you should see a red error:
 
-"Uncaught TypeError: $(...).color is not a function(…)"
+`"Uncaught TypeError: $(...).color is not a function(…)"`
 
 This error means that jQuery does not recognize *.color()* as a valid method. Although it is often possible to guess which method might perform a certain action based on our knowledge of how jQuery works, sometimes things don't work as we predict. We need to investigate beyond our intuition to accomplish this task.
 
@@ -142,13 +142,13 @@ This error means that jQuery does not recognize *.color()* as a valid method. Al
 
 Looking at the [documentation for the *.css* method on the W3 Schools](http://www.w3schools.com/jquery/jquery_css.asp), they provide a helpful example of how to set a background color with jQuery:
 
-$("p").css("background-color", "yellow");
+`$("p").css("background-color", "yellow");`
 
 10. The first thing inside quotations (*""*) within the parenthesis *()* is the attribute 'background-color', and the second is the color value, 'yellow'. This code will almost work for us, but we need to modifying the *$()* method call to use the *id* of the element we want to target, the *h2* element with the *id* of 'make-my-background-yellow'
 
 11. Back in the Developer Tools **Console** tab, let's run our jQuery command:
 
-$('#make-my-background-yellow').css("background-color", "yellow");
+`$('#make-my-background-yellow').css("background-color", "yellow");`
 
 12. Great! That worked! Second jQuery accomplished.
 
@@ -160,14 +160,14 @@ In order to see the **Styles** tab in action, switch back to the **Elements** ta
 
 In the **Elements** tab, find the element labeled:
 
-<h2 id='#make-my-background-yellow'>Make My Background Yellow!</h2>
+`<h2 id='#make-my-background-yellow'>Make My Background Yellow!</h2>`
 
 Click on the element and you should see this text in the **Styles** tab:
 
-\#make-my-background-yellow {
+`#make-my-background-yellow {
     background-color: white;
     width: 50%;
-}
+}`
 
 The code above is **CSS**. Everything inside the *{}* are the style attributes for the '#make-my-background-yellow' element.
 
