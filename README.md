@@ -10,7 +10,7 @@
 
 ## Instructions
 
-For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section below titled **Workshop** for a link to the [List of jQuery Challenges](/index/).
+For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section below titled **Workshop** for a link to the [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com/index.html).
 
 Be Careful! Refreshing the page will erase all of your completed work and force you to restart.
 
@@ -53,7 +53,7 @@ There are several tabs in the developer panel, but today we will only use three 
 
 #### In 7 Steps:
 
-1. Click [this link](/name/) to open the Name exercise in a new tab.
+1. Click [this link](https://ancient-journey-69271.herokuapp.com/name.html) to open the Name exercise in a new tab.
 2. Right click and select **'Inspect'** to open the Developer Tools.
 3. Click on the **Console** tab to open the **JavaScript** console.
 4. In the terminal, you should see a '\>' and a blinking cursor.
@@ -120,7 +120,7 @@ This is the element that you targeted with your first jQuery command. By using t
 
 Let's try another one.
 
-1. First navigate to the [Colors](/colors/) challenge. Inspect the page and open the **Elements** tab.
+1. First navigate to the [Colors](https://ancient-journey-69271.herokuapp.com/colors.html) challenge. Inspect the page and open the **Elements** tab.
 2. In the **Elements** tab, click the triangle next to `<body\>...\</body\>`.
 3. Then click the triangle next to: `<div class="container">...</div>`
 4. Finally, click the triangle next to: `<div class="challenges"\>...\</div\>`
@@ -140,7 +140,7 @@ This error means that jQuery does not recognize *.color()* as a valid method. Al
 
 9. Let's back up and reexamine the problem. When we are changing the *content* of the page (**HTML**), we can use the *.text()* method. But when we are changing the *style* of a page, we need to use the *.css()* method, which .
 
-Looking at the [documentation for the *.css* method on the W3 Schools](http://www.w3schools.com/jquery/jquery_css.asp), they provide a helpful example of how to set a background color with jQuery:
+Looking at the [documentation for the *.css()* method on W3 Schools](http://www.w3schools.com/jquery/jquery_css.asp), they provide a helpful example of how to set a background color with jQuery:
 
 `$("p").css("background-color", "yellow");`
 
@@ -177,7 +177,7 @@ Even though you can accomplish all of the jQuery challenges that involve **CSS**
 
 #### Workshop
 
-Now that we've done a few examples together, here are a few exercises to try on your own: [List of jQuery Challenges](/index/)
+Now that we've done a few examples together, here are a few exercises to try on your own: [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com/index.html)
 
 #### Conclusion
 
@@ -187,4 +187,6 @@ One thing that you may have noticed is no matter what changes you make to a page
 
 The reason for this is that once you refresh a page, your browser loads whatever is stored on the web application's server. Since we are not doing anything to store the results of our jQuery commands in a database on a server, the temporary memory that your browser uses to run **JavaScript** is cleared and when the page reloads you are given a blank slate in the **JavaScript Console** to run commands.
 
-Therefore, the Developer Tools are a great way to test out code, play with ideas, and debug your code to see what is and isn't working the way you want it to. But in order to make your changes to the page permanent, the next step is to leave the **Console** and begin writing **JavaScript** that communicates with servers and stores the results of the code it executes into a database.
+Therefore, the Developer Tools are a great way to test out code, play with ideas, and debug your programs to see what is and isn't working the way you want it to. But in order to make your changes to the page permanent, the next step is to leave the **Console** and begin writing **JavaScript** that communicates with servers and stores the results of the code it executes into a database.
+
+For example, you could jQuery's [AJAX](http://api.jquery.com/jquery.ajax/) (Asynchronous JavaScript And XML), which allows you to make HTTP requests without reloading the page, to make a call to a server through an API. But AJAX is too big of a topic to get into in this workshop, so we'll have to save that discussion for next time.
