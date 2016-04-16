@@ -61,11 +61,11 @@ There are several tabs in the developer panel, but today we will only use three 
 
 `$('#my-name').text('YOUR NAME');`
 
-6. The output that should be returned from that command is something like:
+\6. The output that should be returned from that command is something like:
 
 `[<div id="my-name">'YOUR NAME'</div>]`
 
-7. You're done. You just wrote your first **HTML** page query with **jQuery**!
+\7. You're done. You just wrote your first **HTML** page query with **jQuery**!
 
 #### Breaking It Down:
 
@@ -132,25 +132,25 @@ In the **Console** tab, next to the '\>', type the following into the terminal:
 
 `$('#make-my-background-yellow').backgroundColor('yellow');`
 
-8. After running the command you should see a red error:
+\8. After running the command you should see a red error:
 
 `"Uncaught TypeError: $(...).color is not a function(…)"`
 
 This error means that jQuery does not recognize *.color()* as a valid method. Although it is often possible to guess which method might perform a certain action based on our knowledge of how jQuery works, sometimes things don't work as we predict. We need to investigate beyond our intuition to accomplish this task.
 
-9. Let's back up and reexamine the problem. When we are changing the *content* of the page (**HTML**), we can use the *.text()* method. But when we are changing the *style* of a page, we need to use the *.css()* method, which .
+\9. Let's back up and reexamine the problem. When we are changing the *content* of the page (**HTML**), we can use the *.text()* method. But when we are changing the *style* of a page, we need to use the *.css()* method, which .
 
 Looking at the [documentation for the *.css()* method on W3 Schools](http://www.w3schools.com/jquery/jquery_css.asp), they provide a helpful example of how to set a background color with jQuery:
 
 `$("p").css("background-color", "yellow");`
 
-10. The first thing inside quotations (*""*) within the parenthesis *()* is the attribute 'background-color', and the second is the color value, 'yellow'. This code will almost work for us, but we need to modifying the *$()* method call to use the *id* of the element we want to target, the *h2* element with the *id* of 'make-my-background-yellow'
+\10. The first thing inside quotations (*""*) within the parenthesis *()* is the attribute 'background-color', and the second is the color value, 'yellow'. This code will almost work for us, but we need to modifying the *$()* method call to use the *id* of the element we want to target, the *h2* element with the *id* of 'make-my-background-yellow'
 
-11. Back in the Developer Tools **Console** tab, let's run our jQuery command:
+\11. Back in the Developer Tools **Console** tab, let's run our jQuery command:
 
 `$('#make-my-background-yellow').css("background-color", "yellow");`
 
-12. Great! That worked! Second jQuery accomplished.
+\12. Great! That worked! Second jQuery accomplished.
 
 #### Changing CSS with the Styles Tab
 
