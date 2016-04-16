@@ -10,7 +10,7 @@
 
 ## Instructions
 
-For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section below titled **Workshop** for a link to the [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com/index.html).
+For those already familiar with jQuery, the Developer Tools, and using the JavaScript Console, skip to the section below titled **Workshop** for a link to the [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com).
 
 Be Careful! Refreshing the page will erase all of your completed work and force you to restart.
 
@@ -177,7 +177,7 @@ Even though you can accomplish all of the jQuery challenges that involve **CSS**
 
 #### Workshop
 
-Now that we've done a few examples together, here are a few exercises to try on your own: [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com/index.html)
+Now that we've done a few examples together, here are a few exercises to try on your own: [List of jQuery Challenges](https://ancient-journey-69271.herokuapp.com)
 
 #### Conclusion
 
